@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h2 style="color: purple"> AREA </h2>
+
+    Каждый элемент <strong>AREA</strong> определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Тег <strong>AREA</strong> задает форму области, ее размеры, устанавливает адрес документа, на который следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать документ. Этот тег всегда располагается в контейнере map, который связывает координаты областей с изображением.<br>
+    
+    Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.<br>
+    
+    <h2 style="color: purple"> Атрибуты</h2>
+    <p style="text-decoration: underline"><strong>alt:</strong> </p>
+    Определяет альтернативный текст, который будет виден вместо изображения, если оно не может быть отображено (из-за медленной связи, ошибки в атрибуте src и тд). <br>
+    
+    <p style="text-decoration: underline"><strong>coords:</strong> </p>
+    Атрибут coords указывает координаты активной области на карте-изображения. Он используется вместе с атрибутом shape для указания размера, формы и размещения активной области. Возможные значения атрибута:<br>
+    
+    <p style="text-decoration: underline"><strong>href:</strong> </p>
+    Атрибут href указывает адрес страницы, на которую ведет ссылка с активной области изображения, если он не указан или пропущен, то тег <area> не будет являться гиперссылкой. (адрес может быть либо абсолютным либо относительным)
+    <br>
+    
+    <p style="text-decoration: underline"><strong>hreflang:</strong> </p>
+    Указывает двухбуквенный код языка, определяющий язык страницы, доступной по ссылке. Используется только совместно с атрибутом href и имеет исключительно информативный характер.
+    <br>
+    
+    <p style="text-decoration: underline"><strong>media:</strong> </p>
+    Атрибут media определяет тип документа, на который ведет ссылка или указывает, тип устройства, для которого предназначается ссылка (пример: мобильный телефон, принтер и тд.).<br>
+    Атрибут может принимать несколько значений и используется только совместно с атрибутом href.<br>
+    
+    <p style="text-decoration: underline"><strong>rel:</strong> </p>
+    Атрибут rel определяет отношение между текущим документом и связанным. <br>
+    
+    <p style="text-decoration: underline"><strong>shape:</strong> </p>
+    Атрибут shape указывает форму области. Он используется совместно с атрибутом coords для указания размера, формы и размещения активной области. <br>
+    
+    <p style="text-decoration: underline"><strong>target:</strong> </p>
+    Атрибут target определяет, где будет открыт документ, при переходе по ссылке. Используется только вместе с атрибутом href.<br>
+    
+    <p style="text-decoration: underline"><strong>type:</strong> </p>
+    Атрибут type указывает MIME-тип (спецификация форматирования сообщений и кодирования информации для передачи по интернету) документа, на который ведет ссылка. Используется только совместно с атрибутом href.<br>
+    
+      <h2 style="color: purple"> Пример: </h2>
+    <p>Кликните на часть лица чтобы узнать о ней подробнее:</p>
+     
+    <img src="http://tryeng.ru/wp-content/uploads/2018/05/maxresdefault-1.jpg"  alt="Лицо" usemap="#facemap">
+     
+    <map name="facemap">
+      <area shape="rect" coords="500,0,800,150" alt="Этапы ухода за волосами" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXpEghj2L5vckuGcr4oNXcCn4GQFNnafzL5fEZjWlU7hCsPs29fFv4fWR8ravTSqcqrc&usqp=CAU">
+      <area shape="rect" coords="500,250,800,340"alt="Уход за зоной вокруг глаз" href="https://mirkosmetik.com/thumb/2/L6X-Ao_qIGEx9n48K1uImg/580r450/d/kosmetika-dlya-uhoda-za-kozhej-vokrug-glaz.jpg">
+      <area shape="circle" coords="640,550,30" alt="Уход за губами" href="https://wunder2.com.ua/content/uploads/images/pravila-ukhoda-za-gybami-wunder2-ukraine.png">
+    </map>
+    
+    
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
