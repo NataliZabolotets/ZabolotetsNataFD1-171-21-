@@ -14,7 +14,12 @@
     border: solid gray 1px;
   }
 
-  td:first-child {
+ 
+
+ tr:nth-child(odd) td:nth-child(odd) { background-color: black }
+ tr:nth-child(even) td:nth-child(even) { background-color: black }
+
+ td:first-child {
       background-color: green;
       width: 25px;
           }
@@ -24,10 +29,6 @@
       height: 25px;
                 
 }
-
- tr:nth-child(odd) td:nth-child(odd) { background-color: black }
- tr:nth-child(even) td:nth-child(even) { background-color: black }
-
 
 
 </style>
