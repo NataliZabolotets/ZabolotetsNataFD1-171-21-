@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>*** unnamed text ***</title></head><body>
-<style>
+  <style>
 
-  table.CHESS
-  {
-    border-collapse: collapse;
+    table.CHESS
+    {
+      border-collapse: collapse;
+  
+    }
+  
+    table.CHESS td
+    {
+      width: 50px;
+      height: 50px;
+      border: solid gray 1px;
+    }
+  
+  
+   tr:nth-child(odd) td:nth-child(odd) { background-color: black }
+   tr:nth-child(even) td:nth-child(even) { background-color: black }
+  
+  
+   table tr:first-child  td:nth-child(even), 
+   table tr:first-child  td:nth-child(odd),   
+   table.CHESS tr td:first-child,
+   table.CHESS tr td:last-child,
+   table tr:last-child  td:nth-child(even), 
+   table tr:last-child  td:nth-child(odd)   
+  { 
+     background: lightgreen;
+     width: 25px;
+     height: 25px; 
   }
-
-  table.CHESS td
-  {
-    width: 50px;
-    height: 50px;
-    border: solid gray 1px;
-  }
-
- 
-
- tr:nth-child(odd) td:nth-child(odd) { background-color: black }
- tr:nth-child(even) td:nth-child(even) { background-color: black }
-
- td:first-child {
-      background-color: green;
-      width: 25px;
-          }
-
-  td:last-child {
-      background-color: green;
-      height: 25px;
-                
-}
-
-
-</style>
+  
+  
+  
+  
+  
+  </style>
+  
 
 <table class='CHESS'>
 <tr>
