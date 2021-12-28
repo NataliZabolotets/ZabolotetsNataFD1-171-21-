@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>???</title>
+<style>
+a:hover {color:red}
+
+.first a:nth-child(n+2) { border-left-style: solid; border-color: red }
+
+.second td:nth-child(n+2) { border-left-style: solid; border-color: red  }
+
+.third div:nth-child(n+2) {  width: auto; height: 20px; float: left; border-left: solid; border-color:red }
+.third div:first-child {  width: auto; height: 20px; float: left;}
+
+.fourth a:nth-child(n+2):before {content: '|'; font-weight:bold; color: red }
+
+
+</style>
+  </head>
+  <body>
+
+
+<--Первый вариант (a href)--> <br>
+<div class="first">
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Первая ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Вторая ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Третья ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Четвертая ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Пятая ссылка </a>
+</div>
+
+<--Второй вариант (table)-->  
+<div class="second">
+<table>
+<tr>
+        <td>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Первая ссылка </a>
+       </td>
+       <td>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Вторая ссылка </a>
+        </td>
+        <td>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Третья ссылка </a>
+        </td>
+        <td>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Четвертая ссылка </a>
+        </td>
+         <td>
+            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Пятая ссылка </a>
+        </td>
+</tr>
+</table>
+</div>
+
+<--Третий вариант (div) -->  
+
+<div class="third">
+
+
+<div> <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Первая ссылка </a> </div>
+
+<div><a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Вторая ссылка </a>  </div>
+
+<div> <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Третья ссылка </a> </div>
+
+<div> <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Четвертая ссылка </a> </div>
+
+<div> <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Пятая ссылка </a> </div>
+
+</div>
+
+</br>
+
+<--Четвертый вариант (:before/:after) -->  
+
+<div class="fourth">
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Первая ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Вторая ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Третья ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Четвертая ссылка </a>
+<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD"> Пятая ссылка </a>
+
+</div>
+
+  </body>
+</html>
+
+
+
