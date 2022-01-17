@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>???</title>
+  </head>
+  <body>
+  
 <p>HTML-элемент <strong>picture</strong> служит контейнером для одного или более элементов <strong>source</strong> и одного элемента <strong>img</strong> для обеспечения оптимальной версии изображения для различных размеров экрана. Браузер рассмотрит каждый из дочерних элементов  source и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов source найдено не будет, то будет выбран файл, указанный  атрибутом  src элемента img . Затем выбранное изображение отображается в пространстве, занятом элементом img. </p>
 
 <p>Чтобы выбрать оптимальное изображение, user agent  анализирует атрибуты srcset, media, и type элемента <source> и выбирает совместимое изображение, которое наилучшим образом соответствует текущему макету страницы, характеристикам устройства отображения и т. д. </p>
@@ -20,8 +19,9 @@
 <h1> ПРИМЕР:</h1>
 
 <picture>
-    <source srcset="sea_PNG1.png" media="(min-width: 600px)">
-    <img src="sea_PNG1.png" alt="MDN">
+    <source srcset="https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg" media="(min-width: 800px)">
+    <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt="1">
    </picture>
-</body>
+
+  </body>
 </html>
