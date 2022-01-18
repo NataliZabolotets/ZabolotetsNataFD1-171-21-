@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>???</title>
+<style>
+ *{margin: 0}
+  p {float:left; width: 200px}
+
+textarea,input[type="text"] {
+width: 99%;}
+
+.inp {margin-left:200px}
+
+
+@media (max-width: 600px) {
+ p {float:none;
+      width:100%}
+
+textarea,input[type="text"] {
+
+width: 99%;}
+input[type="radio"] { <br>}
+
+.inp {margin-left:none}
+
+}
+</style>
+  </head>
+  <body>
+
+<div>
+
+<span> Для публикации вашей статьи заполните, пожалуйста, следующую форму: </span>
+<br>
+<br>
+
+<div class="block">
+
+<div>
+<label><p> Название статьи: </p>
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
+<div class="inp"><input type="text" name="fio"> </div>
+</form></label>
+</div>
+
+
+<div>
+<p> Рубрика: </p>
+<select name="rubrika">
+        <option value="1">кино</option>
+        <option value="2">литература</option>
+        <option value="3" selected>програмирование</option>
+        <option value="4" disabled>строительство</option>
+</select><br>
+</div>
+
+<div>
+<p> Публикация: </p>
+<input type="radio" name="answer" value="1">на сайте
+<input type="radio" name="answer" value="2">в журнале
+<input type="radio" name="answer" value="3">на сайте и в журнале
+</div>
+
+<div>
+<label><p>Разрешить коментарий:</p>
+<input type="checkbox" name="coment" checked><br></label>
+</div>
+
+<div>
+<label><p> Текст статьи: </p>
+<br>
+<textarea name="mytext">...</textarea><br></label>
+</div>
+
+</div>
+
+<input type="submit" value="Опубликовать">
+
+</div>
+
+ 
+ </body>
+</html>
