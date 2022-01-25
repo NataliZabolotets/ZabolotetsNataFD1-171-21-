@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+
+@keyframes MyAnimation1{
+    from { background-color: blueviolet; border-radius: 50%; font-size: 15px; box-shadow: 10px 5px 5px grey;}
+    50% { background-color: pink; border-radius: 0%; font-size: 25px; box-shadow: 20px 10px 10px grey;}
+    to { background-color: blueviolet; border-radius: 50%; font-size: 15px; box-shadow: 10px 5px 5px grey;}
+}
+.first {
+    width: 100px;
+    height: 100px;
+    border-color: darkolivegreen; 
+    text-align: center;
+    background-image: linear-gradient(45deg, black, transparent 100px);
+    position: relative;
+    animation: MyAnimation1 3s infinite;
+}
+     
+@keyframes MyAnimation2{
+    from { background-color: lightgreen; border-radius: 30%; font-size: 15px;}
+    50% { background-color: yellow; border-radius: 50%; font-size: 20px;}
+    to { background-color: lightgreen; border-radius: 30%; font-size: 15px;}
+}    
+.second {
+    width: 100px;
+    height: 50px;
+    border-color: blue; 
+    text-align: center;
+    background-image: linear-gradient(150deg, green, transparent 60px);
+    position: relative;
+    box-shadow: 10px 5px 5px darkgreen inset;
+    animation: MyAnimation2 5s infinite;
+}
+
+@keyframes MyAnimation3{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg); }
+}
+
+.thirdd {margin-top:10px;
+            width: 100px;
+            height: 80px;
+            animation: MyAnimation3 1s infinite;       
+}
+
+.third {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+    .third:before, .third:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .third:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+@keyframes MyAnimation4{
+    from {transform: translate(10px, 10px);}
+    to {transform: translate(500px, 10px); }
+}
+.fourth {margin-top:10px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            animation: MyAnimation4 3s infinite;       
+}
+.yin-yang {
+      width: 96px;
+      box-sizing: content-box;
+      height: 48px;
+      background: #eee;
+      border-color: red;
+      border-style: solid;
+      border-width: 2px 2px 50px 2px;
+      border-radius: 100%;
+      position: relative;
+    }
+    .yin-yang:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background: #eee;
+      border: 18px solid red;
+      border-radius: 100%;
+      width: 12px;
+      height: 12px;
+      box-sizing: content-box;
+    }
+    .yin-yang:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: red;
+      border: 18px solid #eee;
+      border-radius: 100%;
+      width: 12px;
+      height: 12px;
+      box-sizing: content-box;
+    }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+   <div>
+<div class="first">
+<p class="animate__animated animate__flipInY animate__infinite" style="padding-top: 40px;">Element1</p>
+</div>
+
+<div class="second">
+<p class="animate__animated animate__rotateIn animate__infinite" style="padding-top: 15px;">Element2</p>
+</div>
+
+<div class="thirdd">
+<div class="third">
+<p style="position: absolute">Element3</p>
+</div>
+</div>
+
+<div class="fourth">
+<div class="yin-yang">
+<p class="animate__animated animate__flipInY animate__infinite" style="padding-top: 20px;">Element4</p>
+</div>
+</div>
+
+
+   </div>
+</body>
+</html>
