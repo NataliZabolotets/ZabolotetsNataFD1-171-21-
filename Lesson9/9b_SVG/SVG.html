@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>???</title>
+<style>
+svg {width: 200px;
+        height:250px;
+        }
+text {font-size: 20px;}
+</style>
+  </head>
+  <body>
+<div>
+  <svg>
+        <defs>
+        <linearGradient id="LG1" x1="20%" y1="20%" x2="40%" y2="40%" spreadMethod="reflect">
+            <stop offset="0%" stop-color="lightgreen" />
+            <stop offset="50%" stop-color="lightyellow" />
+            <stop offset="100%" stop-color="pink" stop-opacity="0.5" />
+        </linearGradient>
+
+        <linearGradient id="LG2" x1="20%" y1="20%" x2="40%" y2="40%" spreadMethod="repeat">
+           <stop offset="0%" stop-color="green" />
+            <stop offset="100%" stop-color="yellow" />
+        </linearGradient>
+
+       <pattern id="TRP1" width="10" height="10"
+            patternUnits="userSpaceOnUse">
+            <polygon points="5,0 10,10 0,10" stroke="black" fill="brown" />
+        </pattern>
+        </defs>
+
+
+    <polygon points="5 100, 85 5, 165 100" stroke="black" fill="url(#TRP1)" />
+    <rect x="10" y="100" width="150" height="150" stroke="black" fill="url(#LG1)" />
+
+    <rect x="50" y="150" width="70" height="70" rx="10" ry="10" stroke="black" fill="lightblue" />
+    <line x1="85" y1="150"  x2="85" y2="220" stroke="black" />
+    <line x1="50" y1="185"  x2="120" y2="185" stroke="black" />
+   <text x="47" y="130" fill="none" stroke="darkred" rotate="20,0,-10"> Дом мечты </text>
+
+
+</svg>
+</div>
+  </body>
+</html>
